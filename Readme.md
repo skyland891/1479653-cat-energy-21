@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Руслан Корбут](https://up.htmlacademy.ru/adaptive/21/user/1479653).
-* Наставник: `Неизвестно`.
+* Наставник: Александр Оксанич.
 
 ---
 
