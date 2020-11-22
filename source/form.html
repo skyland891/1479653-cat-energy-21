@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html class = "page">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <img class="page-header__icon" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+      <img class="page-header__logo" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type = "button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--current">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Подбор программы</h1>
+      <form class="page-main__form" action="https://echo.htmlacademy.ru" method="POST">
+        <section class="form">
+          <div class="form__wrapper">
+            <div class="form__cat-info cat-info">
+              <p class="cat-info__name">
+                <label class="cat-info__name-label" for="cat-name">Имя:<sup>*</sup></label>
+                <input class = "cat-info__name-input" type="text" id = "cat-name">
+              </p>
+              <p class="cat-info__weight">
+                <label class="cat-info__weight-label" for="cat-weight">Вес(КГ):<sup>*</sup></label>
+                <input class = "cat-info__weight-input" type="text" id = "cat-weight">
+              </p>
+              <p class="cat-info__age">
+                <label class="cat-info__age-label" for="cat-age">Возраст(ЛЕТ):</label>
+                <input class = "cat-info__age-input" type="text" id = "cat-age">
+              </p>
+            </div>
+            <div class="form__program program">
+              <ul class="program__list">
+                <li class="program__item">
+                  <input type="radio" class="program__radio" name = "program-question" id = "skinny" value = "skinny">
+                  <label for = "skinny">похудение</label>
+                </li>
+                <li class="program__item">
+                  <input type="radio" class="program__radio" name = "program-question" id = "fat" value = "fat">
+                  <label for = "fat">Набор массы</label>
+                </li>
+                <li class="program__item">
+                  <input type="radio" class="program__radio" name = "program-question"  id = "no-chosen" value = "no-chosen">
+                  <label for = "no-chosen">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+          <div class="contacts__wrapper">
+              <p class="contacts__email email">
+                <label class = "email__label" for="email">E-mail:<sup>*</sup></label><input class="email__input" type="email" id = "email">
+              </p>
+              <p class="contacts__tel tel">
+                <label class="tel__label" for="tel">Телефон:<sup>*</sup></label><input class="tel__input" type="tel" id = "tel">
+              </p>
+          </div>
+        </section>
+        <section class="comment">
+          <h2 class="comment__title">Комментарий</h2>
+          <textarea class = "comment__area" name="comment" id="comment" cols="30" rows="10"></textarea>
+        </section>
+        <section class="meta">
+          <div class="meta__wrapper">
+            <ul class="meta__list">
+              <li class="meta__item">
+                <label class="meta__label" for="sugar">сахарозаменитель</label>
+                <input class="meta__checkbox" type="checkbox" id = "sugar">
+              </li>
+              <li class="meta__item">
+                <label class="meta__label" for="water">питьевая вода</label>
+                <input class="meta__checkbox" type="checkbox" id = "water">
+              </li>
+              <li class="meta__item">
+                <label class="meta__label" for="milk">молоко</label>
+                <input class="meta__checkbox" type="checkbox" id = "milk">
+              </li>
+              <li class="meta__item">
+                <label class="meta__label" for="vitamin">витамины</label>
+                <input class="meta__checkbox" type="checkbox" id = "vitamin">
+              </li>
+            </ul>
+          </div>
+        </section>
+        <button class="page-main__form-button" type = "button"><span class = "page-main__button-text"></span>отправить заявку</button>
+      </form>
+      <small class="page-main_legend">* — Обязательные поля</small>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <p class="contacts__intro">приглашаем<br>
+            к сотрудничеству<br>
+            дилеров!
+          </p>
+          <p class="contacts__adress">ул. Большая<br>
+            Конюшенная, д. 19/8<br>
+            Санкт-Петербург
+          </p>
+        </div>
+        <div class="page-footer__place place">
+          <img class="place__map" src="https://via.placeholder.com/150x150" alt="Мы здесь!">
+          <img class="place__icon" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+        </div>
+        <div class="page-footer__social social">
+          <img class="social__title" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="#"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">HTML Academy</b>
+          <a class="copyright__link" href="#"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
