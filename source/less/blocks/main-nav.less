@@ -1,6 +1,33 @@
 .main-nav {
-  margin: 0;
-  padding: 0;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    max-width: 440px;
+    width: 440px;
+  }
+}
+
+.main-nav__wrapper {
+  display: block;
+  width: 100%;
+
+  @media (min-width: @desktop-width) {
+    background-color: @green-opacity;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+}
+
+.main-nav__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
 }
 
 .main-nav__item {
@@ -16,4 +43,8 @@
 .main-nav__item a {
   text-decoration: none;
   color: @black;
+
+  @media (min-width: @desktop-width) {
+    color: @white;
+  }
 }

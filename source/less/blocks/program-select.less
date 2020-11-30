@@ -2,12 +2,34 @@
   background-color: @green-opacity;
   padding-top: 27px;
   padding-bottom: 164px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+    margin-bottom: 49px;
+    padding-bottom: 0;
+    padding-top: 62px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 114px;
+  }
 }
 
 .program-select__wrapper {
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 90px;
+    padding-top: 55px;
+    margin-bottom: 5px;
+    min-height: 860px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 190px;
+  }
 }
 
 .program-select__slogan {
@@ -19,6 +41,11 @@
   color: @white;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    color: @black;
+  }
 }
 
 .program-select__intro {
@@ -30,4 +57,22 @@
   color: @white;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    text-align: left;
+    color: @black;
+  }
+}
+
+.program-select__to-program {
+  @media (min-width: @tablet-width) {
+    font-family: @oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 26px;
+    margin: 0;
+    width: 244px;
+  }
 }
