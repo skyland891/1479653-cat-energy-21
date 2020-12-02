@@ -5,10 +5,19 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
-  text-transform: uppercase;
   color: @special-dark-grey;
-  padding-left: 20px;
   padding-bottom: 23.57px;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 65px;
+  }
+}
+
+.owner__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .owner__title {
@@ -20,4 +29,8 @@
   color: @black;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 76px;
+  }
 }

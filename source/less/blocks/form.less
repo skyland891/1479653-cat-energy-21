@@ -6,7 +6,6 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @special-dark-grey;
-  padding-left: 20px;
   padding-right: 20px;
 }
 
@@ -17,4 +16,32 @@
   line-height: 18px;
   color: @black;
   margin-bottom: 39px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__cat-info {
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
+}
+
+.form__program {
+  @media (min-width: @tablet-width) {
+    padding-left: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    box-sizing: border-box;
+  }
 }

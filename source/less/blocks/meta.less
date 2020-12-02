@@ -1,6 +1,14 @@
 .meta {
-  padding-left: 20px;
   padding-top: 24px;
+  font-family: @oswald;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 65px;
+  }
 }
 
 .meta__title {
@@ -12,16 +20,33 @@
   color: @black;
   margin: 0;
   margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
 }
 
 .meta__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
 }
 
 .meta__item {
   margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
 }
 
 .meta__label {

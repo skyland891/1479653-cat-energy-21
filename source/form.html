@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html class = "page">
+<html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
+  <body>
     <header class="page-header">
-      <img class="page-header__icon" src="https://via.placeholder.com/150x150" alt="Cat Energy">
-      <img class="page-header__logo" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+      <div class="page-header__img">
+        <img class="page-header__icon" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+        <img class="page-header__logo" src="https://via.placeholder.com/150x150" alt="Cat Energy">
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type = "button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
@@ -30,7 +33,7 @@
       <h1 class="page-main__title">Подбор программы</h1>
       <form class="page-main__form" action="https://echo.htmlacademy.ru" method="POST">
         <section class="form">
-          <p class="form__title">Заполните анкету, и мы подберем
+          <p class="form__title">Заполните анкету, и мы подберем<br>
             программу питания для вашего кота</p>
           <div class="form__wrapper">
             <div class="form__cat-info cat-info">
@@ -85,27 +88,29 @@
           <div class="meta__wrapper">
             <ul class="meta__list">
               <li class="meta__item">
-                <label class="meta__label" for="sugar">сахарозаменитель</label>
                 <input class="meta__checkbox" type="checkbox" id = "sugar">
+                <label class="meta__label" for="sugar">сахарозаменитель</label>
               </li>
               <li class="meta__item">
-                <label class="meta__label" for="water">питьевая вода</label>
                 <input class="meta__checkbox" type="checkbox" id = "water">
+                <label class="meta__label" for="water">питьевая вода</label>
               </li>
               <li class="meta__item">
-                <label class="meta__label" for="milk">молоко</label>
                 <input class="meta__checkbox" type="checkbox" id = "milk">
+                <label class="meta__label" for="milk">молоко</label>
               </li>
               <li class="meta__item">
-                <label class="meta__label" for="vitamin">витамины</label>
                 <input class="meta__checkbox" type="checkbox" id = "vitamin">
+                <label class="meta__label" for="vitamin">витамины</label>
               </li>
             </ul>
           </div>
         </section>
-        <button class="page-main__form-button" type = "button"><span class = "page-main__button-text"></span>отправить заявку</button>
-      </form>
-      <small class="page-main_legend">* — Обязательные поля</small>
+        <div class="page-main__footer">
+          <button class="page-main__form-button" type = "button"><span class = "page-main__button-text"></span>отправить заявку</button>
+          <small class="page-main__legend">* — Обязательные поля</small>
+        </div>
+        </form>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
