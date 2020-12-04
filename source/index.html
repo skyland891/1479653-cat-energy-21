@@ -12,18 +12,18 @@
         <img class="page-header__icon" src="https://via.placeholder.com/150x150" alt="Cat Energy">
         <img class="page-header__logo" src="https://via.placeholder.com/150x150" alt="Cat Energy">
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type = "button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
-              <a href="#">Главная</a>
+              <a class = "main-nav__item-link" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class = "main-nav__item-link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a href="form.html">Подбор программы</a>
+              <a class = "main-nav__item-link"  href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -45,9 +45,9 @@
           <div class="catalog-select__list">
             <div class="catalog-select__item">
               <h3 class="catalog-select__title">похудение</h3>
-              <p class="catalog-select__description">Ваш кот весит больше собаки и<br>
-                почти утратил способность<br>
-                лазить по деревьям? Пора на диету! Cat<br>
+              <p class="catalog-select__description">Ваш кот весит больше собаки и
+                почти утратил способность
+                лазить по деревьям? Пора на диету! Cat
                 Energy Slim поможет вашему питомцу сбросить лишний вес.
               </p>
               <a class="button catalog-select__to-catalog" href="#">каталог slim</a>
@@ -99,12 +99,12 @@
         <div class="example__wrapper">
           <header class="example__header">
             <h2 class="example__title">Живой пример</h2>
-            <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто
-              заменив свой обычный корм на Cat
-              Energy Slim. Отличный результат без
-              изнуряющих тренировок! При этом он не
-              менял своих привычек и по-прежнему
-              спит по 16 часов в день.
+            <p class="example__intro">Борис сбросил 5 кг за 2 месяца, просто<br>
+              заменив свой обычный корм на Cat<br>
+              Energy Slim. Отличный результат без<br>
+              изнуряющих тренировок! При этом он не<br>
+              менял своих привычек и по-прежнему<br>
+              спит по 16 часов в день.<br>
             </p>
           </header>
           <dl class="example__stats-list">
@@ -140,7 +140,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts contacts">
-          <p class="contacts__intro">приглашаем
+          <p class="contacts__intro">приглашаем<br>
             к сотрудничеству
             дилеров!
           </p>
@@ -173,5 +173,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>

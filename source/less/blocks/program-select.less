@@ -1,7 +1,7 @@
 .program-select__header {
   background-color: @green-opacity;
   padding-top: 27px;
-  padding-bottom: 164px;
+  padding-bottom: 302px;
 
   @media (min-width: @tablet-width) {
     background-color: @white;
@@ -16,8 +16,6 @@
 }
 
 .program-select__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
@@ -39,8 +37,12 @@
   font-size: 36px;
   line-height: 36px;
   color: @white;
-  text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 25px;
+  }
 
   @media (min-width: @tablet-width) {
     text-align: left;
@@ -57,6 +59,7 @@
   color: @white;
   text-transform: uppercase;
   text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     text-align: left;

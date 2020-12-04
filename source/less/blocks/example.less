@@ -1,6 +1,9 @@
 .example {
   background-color: @grey-background;
-  padding-top: 17px;
+
+  @media (max-width: @tablet-width) {
+    padding-bottom: 48px;
+  }
   padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
@@ -13,9 +16,6 @@
 }
 
 .example__wrapper {
-  padding-left: 20px;
-  padding-right: 20px;
-
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +35,8 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 33px;
+  margin-top: 57px;
 }
 
 .example__intro {
@@ -55,6 +56,12 @@
   display: flex;
   justify-content: center;
 
+  @media (max-width: @tablet-width) {
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 19px;
+  }
+
   @media (min-width: @desktop-width) {
     justify-content: start;
     width: 100%;
@@ -62,10 +69,18 @@
 }
 
 .example__stats-item--weigth {
-  margin-right: 16px;
+  @media (max-width: @tablet-width) {
+    margin-right: 0;
+    margin-left: 35px;
+  }
+  margin-right: 43px;
 }
 
 .example__stats-item--days {
+  @media (max-width: @tablet-width) {
+    margin-left: 0;
+    margin-right: 22px;
+  }
   margin-left: 16px;
 }
 
@@ -75,6 +90,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  text-align: center;
 }
 
 .example__stats-description {
@@ -85,6 +101,10 @@
   line-height: 12px;
   margin: 0;
   text-align: center;
+
+  @media (max-width: @tablet-width) {
+    margin-top: 8px;
+  }
 }
 
 .example__stats-legend {
@@ -96,6 +116,10 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media (max-width: @tablet-width) {
+    margin-bottom: 40px;
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -128,6 +152,11 @@
 
 .example__img {
   width: 100%;
+
+  @media (max-width: @tablet-width) {
+    height: 232px;
+    margin-bottom: 34px;
+  }
 
   @media (min-width: @tablet-width) {
     background-color: @grey-background;

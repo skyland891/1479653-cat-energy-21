@@ -1,7 +1,21 @@
+.copyright {
+  @media (max-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+  }
+}
+
 .copyright__text {
   font-family: @arial;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+
+  @media (max-width: @tablet-width) {
+    padding-top: 13px;
+    padding-left: 19px;
+  }
 }
