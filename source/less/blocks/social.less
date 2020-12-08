@@ -1,7 +1,11 @@
 .social {
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     padding-top: 40px;
     text-align: center;
+  }
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    margin-top: 30px;
   }
 }
 
@@ -10,16 +14,17 @@
   display: flex;
   justify-content: center;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     height: 63px;
     padding: 0;
   }
 }
 
 .social__title {
-  @media (max-width: @tablet-width) {
-    height: 24px;
-    width: 128px;
+  height: 24px;
+  width: 128px;
+
+  @media (max-width: @mobile-width-only) {
     padding-bottom: 12px;
   }
 }

@@ -22,7 +22,7 @@
   }
 }
 
-@media (max-width: @tablet-width) {
+@media (max-width: @mobile-width-only) {
   .main-nav__toggle {
     position: relative;
     top: -42px;
@@ -100,7 +100,7 @@
   line-height: 24px;
   text-transform: uppercase;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     height: 66px;
     border-top: 1px solid @grey-background;
     width: 100%;
@@ -123,6 +123,10 @@
     bottom: 0;
     width: 100%;
     border-bottom: 2px solid @green;
+
+    @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+      bottom: -9px;
+    }
   }
 }
 

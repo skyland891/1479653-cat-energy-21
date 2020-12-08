@@ -1,9 +1,16 @@
 .copyright {
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-self: center;
+  }
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
   }
 }
 
@@ -14,8 +21,19 @@
   font-size: 16px;
   line-height: 18px;
 
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     padding-top: 13px;
     padding-left: 19px;
+  }
+}
+
+.copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-color: @grey-background;
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    margin-left: 24px;
   }
 }

@@ -1,5 +1,9 @@
 .place {
-  @media (max-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     height: 362px;
+  }
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width) {
+    height: 400px;
   }
 }
