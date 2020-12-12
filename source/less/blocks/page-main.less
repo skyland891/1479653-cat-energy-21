@@ -41,21 +41,26 @@
 }
 
 .page-main__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 46px;
+
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-direction: row;
     align-items: center;
   }
 }
 
 .page-main__form-button {
-  margin: 24px auto;
   display: block;
   background-color: @green;
   font-family: @oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   color: @white;
   text-decoration: none;
   text-transform: uppercase;
@@ -64,6 +69,7 @@
   box-sizing: border-box;
   border: none;
   width: 100%;
+  margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
     margin-right: 60px;
@@ -75,4 +81,12 @@
   @media (min-width: @desktop-width) {
     margin-right: 80px;
   }
+}
+
+.page-main__legend {
+  font-family: @arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }

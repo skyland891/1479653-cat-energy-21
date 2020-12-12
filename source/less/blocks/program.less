@@ -16,8 +16,44 @@
 
 .program__item {
   margin-bottom: 13px;
+  display: flex;
+  align-items: center;
 
   &:last-child {
     margin: 0;
   }
+}
+
+.program__radio {
+  display: none;
+}
+
+.program__radio-fake {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  border: 1px solid @inner-border;
+  border-radius: 100%;
+  margin-right: 16px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 13.5px;
+    width: 13.5px;
+    top: 50%;
+    left: 50%;
+    background-color: @green;
+    border-radius: 100%;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.program__label {
+  display: inline-block;
+  height: 100%;
 }

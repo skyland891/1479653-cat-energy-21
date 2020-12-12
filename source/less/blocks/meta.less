@@ -1,10 +1,10 @@
 .meta {
-  padding-top: 24px;
   font-family: @oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     padding-top: 65px;
@@ -43,11 +43,36 @@
 
 .meta__item {
   margin-bottom: 13px;
+  display: flex;
+  align-items: center;
 
   @media (min-width: @tablet-width) {
     width: 50%;
   }
 }
+
+.meta__checkbox {
+  display: none;
+}
+
+.meta__checkbox-fake {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid @inner-border;
+  box-sizing: border-box;
+  margin-right: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 
 .meta__label {
   text-transform: uppercase;
