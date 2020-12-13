@@ -20,9 +20,19 @@
 .email__label {
   white-space: nowrap;
   margin-right: 12px;
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 16px;
+  }
 }
 
 .email__input {
   height: 40px;
   width: 100%;
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    height: 46px;
+  }
 }
