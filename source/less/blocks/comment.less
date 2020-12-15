@@ -1,3 +1,7 @@
+.comment {
+  padding-bottom: 13px;
+}
+
 .comment__title {
   margin: 0;
   font-family: @oswald;
@@ -10,10 +14,16 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
 .comment__area {
   width: 100%;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    height: 174px;
+  }
 }

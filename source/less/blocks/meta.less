@@ -1,13 +1,17 @@
 .meta {
-  padding-top: 24px;
   font-family: @oswald;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 18px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 65px;
+    padding-top: 42px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 58px;
   }
 }
 
@@ -23,6 +27,8 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -43,12 +49,70 @@
 
 .meta__item {
   margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     width: 50%;
+    margin-bottom: 32px;
+
+    &:nth-child(2n) {
+      padding-left: 30px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+
+    &:nth-child(1) {
+      margin-right: 105px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 137px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 198px;
+    }
   }
 }
 
+.meta__checkbox {
+  display: none;
+}
+
+.meta__checkbox-fake {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border: 1px solid @inner-border;
+  box-sizing: border-box;
+  margin-right: 16px;
+
+  @media (min-width: @tablet-width) {
+    height: 40px;
+    width: 40px;
+    margin-right: 19px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
 .meta__label {
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

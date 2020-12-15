@@ -11,13 +11,14 @@
 
   @media (min-width: @desktop-width) {
     position: absolute;
-    top: 122px;
+    top: 97px;
     left: 109px;
     z-index: 2;
     height: 201px;
     width: 570px;
     background-color: @white;
     padding: 52px 76px;
+    padding-right: 86px;
     box-sizing: border-box;
   }
 }
@@ -30,6 +31,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  min-width: 140px;
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     font-size: 20px;
@@ -64,11 +66,17 @@
     width: 155px;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 10px;
   }
 }
 
 .contacts__adress-city {
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    display: block;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
     display: block;
     margin-top: 20px;
   }

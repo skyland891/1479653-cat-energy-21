@@ -4,6 +4,10 @@
   justify-content: start;
   align-items: flex-start;
   padding-bottom: 24px;
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    padding-bottom: 76px;
+  }
 }
 
 .cat-info__name {
@@ -35,30 +39,79 @@
 
 .cat-info__name-label {
   white-space: nowrap;
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-info__weight-label {
   white-space: nowrap;
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-info__age-label {
   white-space: nowrap;
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .cat-info__name-input {
   width: 100%;
+  padding: 0;
   margin-left: 15px;
   height: 45px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+  }
 }
 
 .cat-info__weight-input {
   width: 100%;
+  padding: 0;
   margin-left: 15px;
   height: 45px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+  }
 }
 
 .cat-info__age-input {
   width: 100%;
+  padding: 0;
   margin-left: 15px;
   height: 45px;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+  }
 }
