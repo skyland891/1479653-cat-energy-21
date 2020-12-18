@@ -12,18 +12,18 @@
         <img class="page-header__icon" src="https://via.placeholder.com/150x150" alt="Cat Energy">
         <img class="page-header__logo" src="https://via.placeholder.com/150x150" alt="Cat Energy">
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type = "button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукции</a>
+              <a class = "main-nav__item-link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item main-nav__item--current">
-              <a href="#">Подбор программы</a>
+              <a class = "main-nav__item-link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class = "main-nav__item-link" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -60,8 +60,8 @@
           <div class="product-cart__item cart-item">
             <img class="cart-item__img" src="https://via.placeholder.com/150x150" alt="">
             <div class="cart-item__desc">
-              <a class="cart-item__link">Cat Energy PRO<br>
-                1000 г</a>
+              <a class="cart-item__link">Cat Energy<br>
+                PRO 1000 г</a>
               <div class="cart-item__option">
                 <dl class="cart-item__info info-item">
                   <dt class="info-item__param">Масса</dt>
@@ -203,37 +203,38 @@
         </div>
       </section>
       <section class="add-product">
+        <h2 class="add-product__title">Дополнительные товары</h2>
         <div class="add-product__wrapper">
           <div class="add-product__list">
             <div class="add-product__item">
               <span class="add-product__name">Сахарозаменитель</span>
               <div class="add-product__option">
-                <div class="add-product__count"><p>1 упаковка (100 г)</p></div>
-                <div class="add-product__price"><p>200 Р.</p></div>
+                <div class="add-product__count"><p class ="add-product__count-text">1 упаковка (100 г)</p></div>
+                <div class="add-product__price"><p class = "add-product__price-text">200 Р.</p></div>
               </div>
               <button class="add-product__button button button--green" type ="button">заказать</button>
             </div>
             <div class="add-product__item">
               <span class="add-product__name">питьевая вода</span>
               <div class="add-product__option">
-                <div class="add-product__count"><p>5 литров</p></div>
-                <div class="add-product__price"><p>50 Р.</p></div>
+                <div class="add-product__count"><p class = "add-product__count-text">5 литров</p></div>
+                <div class="add-product__price"><p class = "add-product__price-text">50 Р.</p></div>
               </div>
               <button class="add-product__button button button--green" type ="button">заказать</button>
             </div>
             <div class="add-product__item">
               <span class="add-product__name">молоко</span>
               <div class="add-product__option">
-                <div class="add-product__count"><p>1 литр</p></div>
-                <div class="add-product__price"><p>100 Р.</p></div>
+                <div class="add-product__count"><p class ="add-product__count-text">1 литр</p></div>
+                <div class="add-product__price"><p class ="add-product__price-text">100 Р.</p></div>
               </div>
               <button class="add-product__button button button--green" type ="button">заказать</button>
             </div>
             <div class="add-product__item">
               <span class="add-product__name">витамины</span>
               <div class="add-product__option">
-                <div class="add-product__count"><p>1 упаковка (30 г)</p></div>
-                <div class="add-product__price"><p>300 Р.</p></div>
+                <div class="add-product__count"><p class = "add-product__count-text">1 упаковка (30 г)</p></div>
+                <div class="add-product__price"><p class = "add-product__price-text">300 Р.</p></div>
               </div>
               <button class="add-product__button button button--green" type ="button">заказать</button>
             </div>
@@ -281,5 +282,21 @@
         </div>
       </div>
     </footer>
+    <script>
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.main-nav__toggle');
+
+      navMain.classList.remove('main-nav--nojs');
+
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+        }
+      });
+    </script>
   </body>
 </html>
