@@ -2,6 +2,14 @@
   margin: 0;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .info-item__param {
@@ -10,6 +18,11 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .info-item__value {
@@ -19,4 +32,9 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
