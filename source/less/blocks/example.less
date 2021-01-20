@@ -2,7 +2,7 @@
   background-color: @grey-background;
 
   @media (max-width: @mobile-width-only) {
-    padding-bottom: 48px;
+    padding-bottom: 62px;
   }
 
   padding-bottom: 24px;
@@ -19,6 +19,11 @@
 }
 
 .example__wrapper {
+  @media (max-width: @mobile-width-only){
+    padding: 0 20px;
+    padding-top: 26px;
+  }
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +49,7 @@
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 33px;
-  margin-top: 57px;
+  margin-top: 0;
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     font-size: 60px;
@@ -259,6 +264,8 @@
   @media (max-width: @mobile-width-only) {
     height: 232px;
     margin-bottom: 34px;
+    background-image: url("../../img/example/before-mobile\ 1.png");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
@@ -271,5 +278,59 @@
     height: 536px;
     width: 50%;
     background-color: @white;
+  }
+}
+
+.example__range {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 84px;
+  background: transparent; /* Otherwise white in Chrome */
+  padding: 0 5px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-ms-track{
+    width: 84px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 35px;
+    height: 6px;
+    background: @green;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 3px;
+  }
+
+  &::-moz-range-thumb {
+    width: 35px;
+    height: 6px;
+    background: @green;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  &::-ms-thumb {
+    width: 35px;
+    height: 6px;
+    background: @green;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 84px;
+    height: 14px;
+    cursor: pointer;
+    background: @white;
+    border-radius: 6px;
+    border: 1px solid @inner-border;
   }
 }

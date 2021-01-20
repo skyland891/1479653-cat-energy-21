@@ -1,7 +1,7 @@
 .program-select__header {
   background-color: @green-opacity;
   padding-top: 27px;
-  padding-bottom: 302px;
+  padding-bottom: 164px;
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     background-color: @white;
@@ -20,6 +20,11 @@
 
 .program-select__wrapper {
   margin-bottom: 22px;
+
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../../img/program-select/index-background-desktop\ 2.png");
+    background-repeat: no-repeat;
+  }
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     padding-left: 82px;
@@ -85,7 +90,18 @@
   }
 }
 
+.program-select__for-button {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 140px;
+    background-color: @white;
+  }
+}
+
 .program-select__to-program {
+  @media (max-width: @mobile-width-only) {
+    margin: 0 20px;
+  }
+
   @media (min-width: @tablet-width) {
     font-family: @oswald;
     font-style: normal;
@@ -94,7 +110,6 @@
     line-height: 20px;
     padding: 17px 26px;
     margin: 0;
-    width: 244px;
     height: 53px;
   }
 }

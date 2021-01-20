@@ -5,6 +5,12 @@
 }
 
 .features__wrapper {
+  padding: 0 20px;
+
+  @media(max-width: @mobile-width-only) {
+    padding-bottom: 30px;
+  }
+
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     padding-right: 78px;
   }
@@ -57,7 +63,7 @@
 
 .features__item {
   height: 60px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
@@ -77,18 +83,36 @@
 }
 
 .features__item--leaf {
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../../img/features/icon_leaf.svg");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+  }
+
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
   }
 }
 
 .features__item--fork {
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../../img/features/icon_tub.svg");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+  }
+
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
   }
 }
 
 .features__item--water {
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../../img/features/icon_eat.svg");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+  }
+
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
     padding-top: 171px;
@@ -96,6 +120,12 @@
 }
 
 .features__item--clock {
+  @media (max-width: @mobile-width-only) {
+    background-image: url("../../img/features/icon_alarm.svg");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+  }
+
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
     padding-top: 171px;

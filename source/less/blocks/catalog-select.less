@@ -1,3 +1,7 @@
+.catalog-select__wrapper {
+  padding: 0 20px;
+}
+
 .catalog-select__list {
   @media (min-width: @desktop-width) {
     display: flex;
@@ -12,6 +16,18 @@
   padding-right: 20px;
   padding-top: 30px;
   margin-top: 19px;
+
+  &--thin {
+    background-image: url("../../img/catalog-select/cat_slim.svg");
+    background-repeat: no-repeat;
+    background-position: 22px 20px;
+  }
+
+  &--fat {
+    background-image: url("../../img/catalog-select/cat-pro.svg");
+    background-repeat: no-repeat;
+    background-position: 14px 22px;
+  }
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     padding-left: 53px;
@@ -115,6 +131,9 @@
   padding: 0;
   margin: 0;
   text-align: start;
+  background-image: url("../../img/catalog-select/icon.svg");
+  background-repeat: no-repeat;
+  background-position: 102px 0;
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     font-size: 20px;
