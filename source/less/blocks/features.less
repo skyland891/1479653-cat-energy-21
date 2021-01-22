@@ -1,6 +1,6 @@
 .features {
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
-    margin-bottom: 52px;
+    margin-bottom: 104px;
   }
 }
 
@@ -12,6 +12,7 @@
   }
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    padding: 0;
     padding-right: 78px;
   }
 }
@@ -64,6 +65,7 @@
 .features__item {
   height: 60px;
   padding-bottom: 20px;
+  position: relative;
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
@@ -91,6 +93,10 @@
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
+    background-image: url("../../img/features/icon_leaf.svg");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    background-size: 80px;
   }
 }
 
@@ -103,6 +109,10 @@
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
+    background-image: url("../../img/features/icon_tub.svg");
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    background-size: 80px;
   }
 }
 
@@ -116,6 +126,10 @@
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
     padding-top: 171px;
+    background-image: url("../../img/features/icon_eat.svg");
+    background-repeat: no-repeat;
+    background-position: 0 55px;
+    background-size: 80px;
   }
 }
 
@@ -129,10 +143,33 @@
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     margin: 0;
     padding-top: 171px;
+    background-image: url("../../img/features/icon_alarm.svg");
+    background-repeat: no-repeat;
+    background-position: 0 55px;
+    background-size: 80px;
   }
 
   @media (min-width: @desktop-width) {
     width: 246px;
+  }
+}
+
+.features__item-number {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    font-family: @oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 280px;
+    line-height: 280px;
+    color: @light-grey-background;
+    left: 118px;
+    top: -20px;
+    z-index: -1;
   }
 }
 

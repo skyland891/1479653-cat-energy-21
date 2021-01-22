@@ -93,8 +93,11 @@
 
   @media (max-width: @mobile-width-only) {
     justify-content: space-between;
-    padding-top: 15px;
-    margin-bottom: 19px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only){
+    margin-top: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -106,16 +109,24 @@
 }
 
 .example__stats-item {
-  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
-    padding-left: 32px;
-    padding-top: 20px;
+  border: 1px solid @border-color;
+  border-radius: 3px;
+  position: relative;
+
+  @media (max-width: @mobile-width-only) {
+    width: 124px;
+    padding-top: 15px;
+    padding-bottom: 14px;
   }
 }
 
 .example__stats-item--weigth {
   @media (max-width: @mobile-width-only) {
     margin-right: 0;
-    margin-left: 35px;
+  }
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    padding: 15px 57px 20px;
   }
 
   @media (min-width: @desktop-width) {
@@ -127,19 +138,17 @@
 
 .example__stats-item--days {
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
-    margin-left: 18px;
+    padding: 15px 30px 20px;
+
   }
 
   @media (max-width: @mobile-width-only) {
     margin-left: 0;
-    margin-right: 22px;
   }
 
   @media (min-width: @desktop-width) {
     margin-left: 50px;
   }
-
-  margin-left: 16px;
 }
 
 .example__stats-number {
@@ -153,7 +162,6 @@
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     font-size: 30px;
     line-height: 37px;
-    margin-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
@@ -164,6 +172,7 @@
 }
 
 .example__stats-description {
+  position: absolute;
   font-family: @arial;
   font-style: normal;
   font-weight: normal;
@@ -175,10 +184,16 @@
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
     font-size: 14px;
     line-height: 14px;
+    bottom: -8px;
+    left: 25px;
+    background-color: @white;
   }
 
   @media (max-width: @mobile-width-only) {
-    margin-top: 8px;
+    bottom: -18px;
+    left: 20px;
+    background-color: @grey-background;
+    width: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -207,7 +222,7 @@
     align-items: flex-end;
     font-size: 20px;
     line-height: 20px;
-    padding-top: 32px;
+    padding-top: 40px;
   }
 
   @media (min-width: @desktop-width) {
@@ -269,9 +284,11 @@
   }
 
   @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
-    background-color: @grey-background;
     height: 580px;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+    background:
+      url(../../img/example/cat-fat.png) 45% 115% no-repeat,
+      url(../../img/example/cat-skinny.png) 65% 110% no-repeat;
   }
 
   @media (min-width: @desktop-width) {
@@ -307,6 +324,17 @@
     border-radius: 6px;
     cursor: pointer;
     margin-top: 3px;
+
+    @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+      width: 35px;
+      height: 35px;
+      padding: 13px;
+      box-sizing: border-box;
+      border-radius: 100%;
+      background-color: @green;
+      border: 1px solid @inner-border;
+      margin-top: -10px;
+    }
   }
 
   &::-moz-range-thumb {
@@ -332,5 +360,9 @@
     background: @white;
     border-radius: 6px;
     border: 1px solid @inner-border;
+  }
+
+  @media (min-width: @tablet-width)and(max-width: @tablet-width-only) {
+    width: 428px;
   }
 }

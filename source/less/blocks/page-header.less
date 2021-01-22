@@ -38,8 +38,16 @@
 .page-header__icon {
   max-height: 100%;
   margin-right: 52px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-header__logo {
   max-height: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
