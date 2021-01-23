@@ -5,6 +5,8 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -28,6 +30,8 @@
 
 .page-header__img {
   height: 66px;
+  box-sizing: border-box;
+  padding-top: 10px;
 
   @media (min-width: @tablet-width) {
     max-width: 174px;
@@ -36,8 +40,17 @@
 
 .page-header__icon {
   max-height: 100%;
+  margin-right: 52px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-header__logo {
   max-height: 100%;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
